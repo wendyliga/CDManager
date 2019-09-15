@@ -145,6 +145,7 @@ public class CDManager<T: NSManagedObject> {
         request.sortDescriptors = sort
         request.predicate = predicate
 
-        return try? container.fetch(request) as? [T]
+        let context = try? container.fetch(request)
+        return context as? [T]
     }
 }
