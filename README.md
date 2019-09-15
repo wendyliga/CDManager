@@ -4,6 +4,17 @@
 
 Easy Core Data Usage
 
+*More to be added*
+
+## Instalation
+
+Cocoapods
+```
+pod 'iCDManager'
+```
+
+Carthage, and swift page manager coming soon
+
 ## Lisence
 
 MIT License
