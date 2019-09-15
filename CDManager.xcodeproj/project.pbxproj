@@ -17,10 +17,19 @@
 		8618C7E0232E22F3002C2CBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8618C7DE232E22F3002C2CBB /* LaunchScreen.storyboard */; };
 		8618C7E6232E256F002C2CBB /* CDManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8618C7AE232DE86E002C2CBB /* CDManager.framework */; };
 		8618C7E7232E256F002C2CBB /* CDManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8618C7AE232DE86E002C2CBB /* CDManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8618C7F6232E2A4B002C2CBB /* CDManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8618C7F5232E2A4B002C2CBB /* CDManagerTests.swift */; };
+		8618C7F8232E2A4B002C2CBB /* CDManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8618C7AE232DE86E002C2CBB /* CDManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8618C7E8232E256F002C2CBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8618C7A5232DE86E002C2CBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8618C7AD232DE86E002C2CBB;
+			remoteInfo = CDManager;
+		};
+		8618C7F9232E2A4B002C2CBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8618C7A5232DE86E002C2CBB /* Project object */;
 			proxyType = 1;
@@ -56,6 +65,9 @@
 		8618C7DC232E22F3002C2CBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8618C7DF232E22F3002C2CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8618C7E1232E22F3002C2CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8618C7F3232E2A4B002C2CBB /* CDManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8618C7F5232E2A4B002C2CBB /* CDManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManagerTests.swift; sourceTree = "<group>"; };
+		8618C7F7232E2A4B002C2CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8618C7F0232E2A4B002C2CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8618C7F8232E2A4B002C2CBB /* CDManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +102,7 @@
 			children = (
 				8618C7B0232DE86E002C2CBB /* CDManager */,
 				8618C7CF232E22F1002C2CBB /* CDManagerExample */,
+				8618C7F4232E2A4B002C2CBB /* CDManagerTests */,
 				8618C7AF232DE86E002C2CBB /* Products */,
 				8618C7E5232E256F002C2CBB /* Frameworks */,
 			);
@@ -92,6 +113,7 @@
 			children = (
 				8618C7AE232DE86E002C2CBB /* CDManager.framework */,
 				8618C7CE232E22F1002C2CBB /* CDManagerExample.app */,
+				8618C7F3232E2A4B002C2CBB /* CDManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +147,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8618C7F4232E2A4B002C2CBB /* CDManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8618C7F5232E2A4B002C2CBB /* CDManagerTests.swift */,
+				8618C7F7232E2A4B002C2CBB /* Info.plist */,
+			);
+			path = CDManagerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +209,24 @@
 			productReference = 8618C7CE232E22F1002C2CBB /* CDManagerExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8618C7F2232E2A4B002C2CBB /* CDManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8618C7FB232E2A4B002C2CBB /* Build configuration list for PBXNativeTarget "CDManagerTests" */;
+			buildPhases = (
+				8618C7EF232E2A4B002C2CBB /* Sources */,
+				8618C7F0232E2A4B002C2CBB /* Frameworks */,
+				8618C7F1232E2A4B002C2CBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8618C7FA232E2A4B002C2CBB /* PBXTargetDependency */,
+			);
+			name = CDManagerTests;
+			productName = CDManagerTests;
+			productReference = 8618C7F3232E2A4B002C2CBB /* CDManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +242,9 @@
 						LastSwiftMigration = 1100;
 					};
 					8618C7CD232E22F1002C2CBB = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					8618C7F2232E2A4B002C2CBB = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
@@ -212,6 +264,7 @@
 			targets = (
 				8618C7AD232DE86E002C2CBB /* CDManager */,
 				8618C7CD232E22F1002C2CBB /* CDManagerExample */,
+				8618C7F2232E2A4B002C2CBB /* CDManagerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +284,13 @@
 				8618C7E0232E22F3002C2CBB /* LaunchScreen.storyboard in Resources */,
 				8618C7DD232E22F3002C2CBB /* Assets.xcassets in Resources */,
 				8618C7D8232E22F1002C2CBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8618C7F1232E2A4B002C2CBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +315,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8618C7EF232E2A4B002C2CBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8618C7F6232E2A4B002C2CBB /* CDManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -262,6 +330,11 @@
 			isa = PBXTargetDependency;
 			target = 8618C7AD232DE86E002C2CBB /* CDManager */;
 			targetProxy = 8618C7E8232E256F002C2CBB /* PBXContainerItemProxy */;
+		};
+		8618C7FA232E2A4B002C2CBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8618C7AD232DE86E002C2CBB /* CDManager */;
+			targetProxy = 8618C7F9232E2A4B002C2CBB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -496,6 +569,42 @@
 			};
 			name = Release;
 		};
+		8618C7FC232E2A4B002C2CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4B2X382W7X;
+				INFOPLIST_FILE = CDManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wendyliga.CDManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8618C7FD232E2A4B002C2CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4B2X382W7X;
+				INFOPLIST_FILE = CDManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wendyliga.CDManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -522,6 +631,15 @@
 			buildConfigurations = (
 				8618C7E3232E22F3002C2CBB /* Debug */,
 				8618C7E4232E22F3002C2CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8618C7FB232E2A4B002C2CBB /* Build configuration list for PBXNativeTarget "CDManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8618C7FC232E2A4B002C2CBB /* Debug */,
+				8618C7FD232E2A4B002C2CBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
