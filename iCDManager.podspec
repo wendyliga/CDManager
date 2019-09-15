@@ -33,7 +33,7 @@ Pod::Spec.new do |spec|
         Will change this later.
                    DESC
 
-  spec.homepage     = "https://github.com/wendyliga/CDManager"
+  spec.homepage     = "https://github.com/wendyliga/iCDManager"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -85,7 +85,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/wendyliga/CDManager.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/wendyliga/iCDManager.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
